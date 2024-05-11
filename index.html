@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Perfume Shop</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/itc-slider.css">
+	<link rel="stylesheet" type="text/css" href="css/accordion.css">
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<nav class="nav">
+				<h4 class="logo">Perfume Shop</h4>
+				<ul class="nav__list">
+					<li class="nav__item"><a href="" class="nav__link">Вход</a></li>
+					<li class="nav__item"><a href="" class="nav__link">Корзина</a></li>
+					<li class="nav__item"><a href="" class="nav__link">Акции</a></li>
+					<li class="nav__item"><a href="" class="nav__link">Реклама</a></li>
+				</ul>
+				<div class="burger" onclick="burgerClick()">
+					<div class="burger__line"></div>
+					<div class="burger__line"></div>
+					<div class="burger__line"></div>
+				</div>
+			</nav>
+			
+		
+		<button class="btn_menu" id="btn-menu">Меню</button>
+
+		<div class="header__menu" id="menu">
+			<ul class="menu__list">
+				<li class="menu__item"><a href="#">Вход</a></li>
+				<li class="menu__item"><a href="#">Корзина</a></li>
+				<li class="menu__item"><a href="#">Акции</a></li>
+				<li class="menu__item"><a href="#">Реклама</a></li>
+				<li class="menu__item">
+					<div class="theme">
+						<li class="theme__title">Тема</li>
+						<ul class="theme__list">
+							<li class="theme__item">
+								<div class="theme__light" onclick="choiceLight()"></div>
+							</li>
+							<li class="theme__item">
+								<div class="theme__dark" onclick="choiceDark()"></div>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</header>
+	<main class="main">
+		<section class="shop">
+			<div class="container">
+				<h1 class="shop_title">Miss Dior Eau de Parfum</h1>
+				<div class="itc-slider" data-slider="itc-slider">
+				  <div class="itc-slider-wrapper">
+				    <div class="itc-slider-items">
+				      <div class="itc-slider-item">
+				        <!-- Контент 1 слайда -->
+				        <img class="img_shop" src="img/perfumimg.png">
+				      </div>
+				      <div class="itc-slider-item">
+				        <!-- Контент 2 слайда -->
+				        <img class="img_shop" src="img/perfumimg2.jpg">
+				      </div>
+				      <div class="itc-slider-item">
+				        <!-- Контент 3 слайда -->
+				        <img class="img_shop" src="img/perfumimg4.png">
+				      </div>
+				    </div>
+				  </div>
+				  
+				  <button class="itc-slider-btn itc-slider-btn-prev"></button>
+				  <button class="itc-slider-btn itc-slider-btn-next"></button>
+				</div>
+				<div class="accordion" id="accordion-1">
+					<div class="accordion__item">
+						<h2 class="accordion__header">Описание</h2>
+					<div class="accordion__body">Miss Dior Eau de Parfum (2021) Dior — это аромат для женщин, он принадлежит к группе восточные цветочные. Miss Dior Eau de Parfum (2021) выпущен в 2021 году. Парфюмер: François Demachy. Верхние ноты: Ирис, Пион и Ландыш; средние ноты: Абрикос, Роза и Персик; базовые ноты: Ваниль, Мускус, Бобы тонка, Бензоин и Сандал.</div>
+					<div class="accordion__item">
+						<h2 class="accordion__header">Цена</h2>
+					<div class="accordion__body">
+						<p class="shop_price">130$</p>
+						<button class="shop_btn" id="btn" onclick="buy()">Купить</button>
+					</div>
+					</div>
+				</div>
+				<!-- <h2 class="shop_title">Описание</h2>
+				<p class="shop_text">Miss Dior Eau de Parfum (2021) Dior — это аромат для женщин, он принадлежит к группе восточные цветочные. Miss Dior Eau de Parfum (2021) выпущен в 2021 году. Парфюмер: François Demachy. Верхние ноты: Ирис, Пион и Ландыш; средние ноты: Абрикос, Роза и Персик; базовые ноты: Ваниль, Мускус, Бобы тонка, Бензоин и Сандал.</p>
+				<h2 class="shop_title">Цена</h2>
+				<p class="shop_price">130$</p>
+				<button class="shop_btn" id="btn" onclick="buy()">Купить</button> -->
+			</div>
+		</section>
+		<section class="map">
+			<div class="container">
+				<h2 class="map__title">Адресс</h2>
+				<ul class="map__list">
+					<li class="map__item">
+						<h3 class="list__title">Google Maps</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d659.6695013820315!2d20.930970195577505!3d52.24183701337934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb0fd74a7365%3A0x455be6010b013a28!2sG%C3%B3rczewska%20124%2C%2001-460%20Warszawa!5e0!3m2!1sen!2spl!4v1712493660253!5m2!1sen!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<p class="footer__text">
+				&copy; 2024 Dior
+			</p>
+		</div>
+	</footer>
+	<script src="scripts/script.js"></script>
+	<script src="scripts/itc-slider.js"></script>
+	<script src="scripts/menu.js"></script>
+	<script src="scripts/accordion.js"></script>
+	<script src="scripts/theme.js"></script>
+	<script src="scripts/burger.js"></script>
+
+
+</body>
+</html>

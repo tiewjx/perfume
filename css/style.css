@@ -1,0 +1,172 @@
+.img_shop
+{
+	width: 100%;
+	height: 100%;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.container
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+.itc-slider
+{
+	width: 500px;
+}
+
+.header__menu
+{
+	position: absolute;
+	z-index: 1;
+	background-color: rgba(252, 172, 208, 0.7);
+	width: 150px;
+	height: 200px;
+	padding: 20px;
+	display: none; /*скрывает элемент*/
+}
+
+.is-active
+{
+	display: block;
+}
+.map__list
+{
+	display: flex;
+	list-style: none;
+}
+.map__item
+{
+	width: 50%;
+}
+.header
+{
+	background-color: lightpink;
+	padding: 40px 0;
+}
+.main 
+{
+	background-color: pink;
+}
+.nav__list
+{
+	display: flex;
+	gap: 100px;
+	list-style: none;
+}
+.burger__line
+{
+	width: 50px;
+	height: 7px;
+	background-color: pink;
+	margin: 10px;
+}
+.burger 
+{
+	display: none;
+	cursor: pointer;
+}
+.nav__link
+{
+	text-decoration: none;
+	color: deeppink;
+	font-size: 22px;
+}
+.nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-shadow: 2px 2px 3px white;
+}
+.logo
+{
+	font-size: 50px;
+}
+.btn_menu
+{
+	padding: 10px 20px;
+	font-size: 20px;
+	margin-top: 50px;
+	background-color: #fc6581;
+	cursor: pointer;
+
+}
+.btn_menu:active
+{
+	transform: scale(0.9);
+}
+.footer
+{
+	background-color: lightpink;
+	padding: 40px 0;
+}
+.footer__text
+{
+	font-style: italic;
+}
+.theme__light
+{
+	background-color: lightpink;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.theme__dark
+{
+	background-color: black;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.theme__light:active
+{
+	transform: scale(0.9);
+}
+.theme__dark:active
+{
+	transform: scale(0.9);
+}
+.theme__list
+{
+	display: flex;
+	gap: 7px;
+	list-style: none;
+	margin-top: 5px;
+}
+@media (max-width: 900px)
+{
+	body
+	{
+		overflow-x: hidden;
+	}
+	.burger 
+	{
+		display: block;
+	}
+	.container
+	{
+		max-width: 800px;
+	}
+	.nav__list
+	{
+		flex-direction: column;
+		position: absolute;
+		background-color: pink;
+		top: 223px;
+		z-index: 2;
+		right: 0;
+		padding: 20px;
+		transform: translateX(100%);
+		transition: 1s;
+
+	}
+	.nav__list_active
+	{
+		transform: translateX(0%);
+	}
+}
